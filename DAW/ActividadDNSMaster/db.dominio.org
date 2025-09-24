@@ -1,0 +1,19 @@
+;
+; BIND zone file for dominio.org
+;
+
+$TTL    3D
+@       IN      SOA     dns.dominio.org.    root.dominio.org. (
+                        2023100301      ; serial
+                        8H              ; refresh
+                        2H              ; retry
+                        4W              ; expire
+                        1D )            ; minimum
+;
+                NS      dns              ; Inet address of name server
+		MX      10 correo         ; Primary mail exchanger
+
+dns             A       10.0.0.1
+correo          A       10.0.0.1
+www				A		10.0.0.100
+pc1	        	A       10.0.0.10
