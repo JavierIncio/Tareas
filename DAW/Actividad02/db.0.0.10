@@ -1,0 +1,17 @@
+;
+; BIND zone file for 10.0.0.0
+;
+
+$TTL    3D
+@       IN      SOA     dns.dominio.org.    root.dominio.org. (
+                        2023100301      ; serial
+                        8H              ; refresh
+                        2H              ; retry
+                        4W              ; expire
+                        1D )            ; minimum
+;
+              NS      dns.dominio.org.    ; Nameserver address
+1             PTR     dns.dominio.org.
+1             PTR     correo.dominio.org.
+10            PTR     pc1.dominio.org.
+100	          PTR     www.dominio.org.
